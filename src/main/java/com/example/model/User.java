@@ -5,14 +5,25 @@ public class User {
     private String name;
     private String email;
 
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     // Default constructor
     public User() {}
 
     // Parameterized constructor
-    public User(int id, String name, String email) {
+    public User(int id, String name, String email, int age) {
         this.id = id;
         this.name = name;
         this.email = email;
+        this.age = age;
     }
 
     // Getters and setters
@@ -42,7 +53,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{id=" + id + ", name='" + name + "', email='" + email + "'}";
+        return "User{id=" + id + ", name='" + name + "', email='" + email + "', age=" + age + "}";
     }
 }
 

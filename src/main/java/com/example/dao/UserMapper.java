@@ -1,9 +1,9 @@
 package com.example.dao;
 
-import com.example.model.User;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.model.User;
 
 public interface UserMapper {
 
@@ -17,8 +17,8 @@ public interface UserMapper {
 
         public InMemoryUserMapper() {
             // Adding some default users
-            users.add(new User(1, "John Doe", "john@example.com"));
-            users.add(new User(2, "Jane Smith", "jane@example.com"));
+            users.add(new User(1, "John Doe", "john@example.com", 20));
+            users.add(new User(2, "Jane Smith", "jane@example.com", 40));
         }
 
         @Override
